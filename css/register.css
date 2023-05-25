@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.447), rgba(0, 0, 0, 0.5)),
+    url("../img/136Z_2106.w023.n001.607B.p1.607.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Readex Pro", sans-serif;
+  height: 100vh;
+  width: auto;
+ 
+}
+body::-webkit-scrollbar {
+  width: 6px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 3px 4px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 450px;
+  padding: 20px 0;
+}
+.form-content::-webkit-scrollbar {
+  width: 6px;
+  height: auto;
+	background-color: #F5F5F5;
+}
+.form-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+.form-content::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  height: 60px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.form-content h2 {
+  color: white;
+  font-size: 55px;
+}
+
+.form-content h2 a {
+  color: white;
+}
+
+.form-content h3 {
+  color: #fbfbfb;
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.form-content h4 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.form-content p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.form-content p a {
+  text-decoration: underline;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.main-informations input {
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  border: 2px solid white;
+  background: transparent;
+  transition: 0.3s;
+  outline: none;
+}
+::placeholder {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio input[type="checkbox"] {
+  display: none;
+}
+
+.gender div {
+  display: inline-block;
+  margin: 5px;
+}
+
+.hobbies div{
+  display: inline-block;
+  margin: 5px;
+}
+
+.radio div label span {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: 2px white solid;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-size: 15px;
+  transition: 0.5s all;
+  font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.radio div label input[type="radio"]:checked ~ span {
+  background: white;
+  color: #4f028e;
+  box-shadow: 0 2px 20px white;
+}
+
+.radio div label input[type="checkbox"]:checked ~ span {
+  background: white;
+  color: #4f028e;;
+  box-shadow: 0 2px 20px white;
+}
+
+input:focus {
+  transform: scale(1.1);
+  border: 2px solid #4f028e;
+}
+
+.form-container .form-content .btn-login {
+  background: white;
+  color: #4f028e;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px white;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin: 80px 0px 20px 0;
+  transition: 0.5s;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .form-container {
+    height: 100%;
+    border-radius: inherit;
+  }
+}

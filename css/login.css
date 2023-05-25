@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.5)),
+    url("../img/136Z_2106.w023.n001.607B.p1.607.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Readex Pro", sans-serif;
+  height: 100vh;
+  width: auto;
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 3px 4px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 450px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-content h2 {
+  color: white;
+  font-size: 55px;
+}
+
+.form-content h2 a {
+  color: white;
+}
+
+.form-content h3 {
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-content p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.form-content p a {
+  text-decoration: underline;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.form-container .form-content .btn-login {
+  background: white;
+  color: #0f0c29;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 3px 0px 10px black;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.form-container .form-content input {
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  border: 2px solid white;
+  background: transparent;
+  transition: 0.3s;
+  outline: none;
+}
+::placeholder {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn-login:hover,
+.btn-login:active {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .form-container {
+    height: 100%;
+    border-radius: inherit;
+  }
+}
